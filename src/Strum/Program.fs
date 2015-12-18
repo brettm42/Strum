@@ -11,4 +11,4 @@ module Console =
         let strings = notes [E; A; D; G; B; E;]
         
         printfn "%A" argv
-        0 // return an integer exit code
+        0
