@@ -48,10 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Scale.fs" />
     <Compile Include="Note.fs" />
+    <Compile Include="Printer.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
+    <Compile Include="Scale.fs" />
+    <Compile Include="Chords.fs" />
+    <Compile Include="Fretboard.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
