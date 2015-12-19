@@ -12,22 +12,21 @@ module Scale =
     let A n = C n + 9
     let B n = C n + 11
 
-    let sharp n = n + 1
-
     let flat n = n - 1
-
+    let sharp n = n + 1
+        
     let Cb = C >> flat
-    let C# = C >> sharp
+    let ``C#`` = C >> sharp
     let Db = D >> flat
-    let D# = D >> sharp
+    let ``D#`` = D >> sharp
     let Eb = E >> flat
-    let E# = E >> sharp
+    let ``E#`` = E >> sharp
     let Fb = F >> flat
-    let F# = F >> sharp
+    let ``F#`` = F >> sharp
     let Gb = G >> flat
-    let G# = G >> sharp
+    let ``G#`` = G >> sharp
     let Ab = A >> flat
-    let A# = A >> sharp
+    let ``A#`` = A >> sharp
     let Bb = B >> flat
-    let B# = B >> sharp
+    let ``B#`` = B >> sharp
     
