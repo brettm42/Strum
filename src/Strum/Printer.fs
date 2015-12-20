@@ -4,7 +4,7 @@
 module Printer =
     open System
         
-    let print chord strings =
+    let printTab chord strings =
         let numStrings = (strings : Note list).Length
         let fretSpan = 5
 
