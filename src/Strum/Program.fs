@@ -1,6 +1,7 @@
 ﻿namespace Strum
 
-module Console = 
+module Console =     
+    open Strum
     open System
 
     [<EntryPoint>]
@@ -12,7 +13,20 @@ module Console =
 
         let CM = chord C M strings
         let Cm = chord C m strings
+        let Dm7 = chord D m7 strings
+        let FM7 = chord F M7 strings
 
-        CM |> print
+        printfn "C major"
+        printTab CM strings
 
+        printfn "\r\nC minor"
+        printTab Cm strings
+
+        printfn "\r\nD minor 7th"
+        printTab Dm7 strings
+
+        printfn "\r\nF major 7th"
+        printTab FM7 strings
+
+        Console.ReadLine()
         0
