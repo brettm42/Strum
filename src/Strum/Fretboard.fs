@@ -6,6 +6,7 @@ module Fretboard =
         
     let fretboardSize = 15
 
+    // TODO: configure chord complexity, chord span
     let findFrets chord (string : Note) = 
         [0..fretboardSize]
         |> List.filter (fun fret -> Set.contains (string + fret) chord)
