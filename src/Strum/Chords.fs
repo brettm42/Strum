@@ -12,6 +12,7 @@ module Chords =
     let m n = intervals [n; n + 3; n + 7]
     let M7 n = intervals [n; n + 4; n + 7; n + 11]
     let m7 n = intervals [n; n + 3; n + 7; n + 11]
+    let m9 n = intervals [n; n + 3; n + 7; n + 10; n + 14]
     
     let chord root intervals strings =
         let chord = intervals (root 4)
