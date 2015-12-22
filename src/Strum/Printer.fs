@@ -9,10 +9,8 @@ module Printer =
         let fretSpan = 5
 
         let fret1 n fret2 =
-            if n = fret2 then
-                "o"
-            else
-                "|"
+            if n = fret2 then "o"
+            else "|"
 
         let line chord n =
             chord

@@ -22,8 +22,7 @@ module Fretboard =
         | string::tail ->
             string
             |> List.filter 
-                (fun (_, note) -> 
-                    chord |> Set.contains note)
+                (fun (_, note) -> chord |> Set.contains note)
             |> List.choose 
                 (fun (fret, note) -> 
                     filterChord chord (Set.remove note missingNotes) ((fret, note)::solution) tail)
