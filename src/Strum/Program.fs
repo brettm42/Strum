@@ -15,6 +15,7 @@ module Console =
         let Cm = chord C m strings
         let Dm7 = chord D m7 strings
         let FM7 = chord F M7 strings
+        let ``G#M9`` = chord ``G#`` M9 strings
         let Am9 = chord A m9 strings
         let ``C#13`` = chord ``C#`` ``13`` strings
 
@@ -29,6 +30,9 @@ module Console =
 
         printfn "\r\nF major 7th"
         printTab FM7 strings
+
+        printfn "\r\nG# major 9th"
+        printTab ``G#M9`` strings
 
         printfn "\r\nA minor 9th"
         printTab Am9 strings
