@@ -13,6 +13,8 @@ module Console =
 
         let CM = chord C M strings
         let Cm = chord C m strings
+        let Ebm7 = chord Eb m7 strings
+        let ``D#m7`` = chord ``D#`` m7 strings
         let Dm7 = chord D m7 strings
         let FM7 = chord F M7 strings
         let ``G#M9`` = chord ``G#`` M9 strings
@@ -39,6 +41,12 @@ module Console =
 
         printfn "\r\nC#13"
         printTab ``C#13`` strings
+
+        printfn "\r\nEbm7"
+        printTab Ebm7 strings
+
+        printfn "\r\nD#m7"
+        printTab ``D#m7`` strings
 
         Console.ReadLine()
         0
