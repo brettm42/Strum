@@ -42,10 +42,10 @@ module Console =
         printfn "\r\nC#13"
         printTab ``C#13`` strings
 
-        printfn "\r\nEbm7"
+        printfn "\r\nEb minor 7th"
         printTab Ebm7 strings
 
-        printfn "\r\nD#m7"
+        printfn "\r\nD# minor 7th"
         printTab ``D#m7`` strings
 
         Console.ReadLine()
